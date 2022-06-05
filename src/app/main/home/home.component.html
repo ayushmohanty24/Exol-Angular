@@ -1,0 +1,154 @@
+<div class="se-pre-con"></div>
+<div class="top-bar-area address-two-lines bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 address-info">
+                <div class="info box">
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-map"></i> Address</span>Bhubaneswar
+                        </li>
+                        <li>
+                            <span><i class="fas fa-envelope-open"></i> Email</span>Info@gmail.com
+                        </li>
+                        <li>
+                            <span><i class="fas fa-phone"></i> Contact</span>+123 456 7890
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-login text-right col-md-4">
+                <a class="popup-with-form" href="#register-form">
+                    <i class="fas fa-edit"></i> Register
+                </a>
+                <a  class="popup-with-form" href="#login-form">
+                    <i class="fas fa-user"></i> Login
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmitloginform()" id="login-form" class="mfp-hide white-popup-block">
+        <div class="col-md-4 login-social">
+            <h4>Login with social</h4>
+            <ul>
+                <li class="facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8 login-custom">
+            <h4>login to your registered account!</h4>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input  formControlName="email" class="form-control" placeholder="Email*" type="email">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control"  formControlName="password" placeholder="Password*" type="password">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-12">
+                <div class="row">
+                    <label for="login-remember"><input type="checkbox" id="login-remember">Remember Me</label>
+                    <a title="Lost Password" href="#" class="lost-pass-link">Lost your password?</a>
+                </div>
+            </div> -->
+            <div class="col-md-12">
+                <div class="row">
+                    <button type="submit">
+                        Login
+                    </button>
+                </div>
+            </div>
+            <p class="link-bottom">Not a member yet? <a href="#">Register now</a></p>
+        </div>
+    </form>
+    <!-- End Login Form -->
+
+    <!-- Start Register Form 
+    ============================================= -->
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmitregform()" id="register-form" class="mfp-hide white-popup-block">
+        <div class="col-md-4 login-social">
+            <h4>Register with social</h4>
+            <ul>
+                <li class="facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8 login-custom">
+            <h4>Register a new account</h4>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control"  formControlName="email" placeholder="Email*" type="email">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control"  formControlName="name" placeholder="Username*" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control"  formControlName="pass" placeholder="Password*" type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control"   placeholder="Repeat Password*" type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <button type="submit" name="submit">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+            <p class="link-bottom">Are you a member? <a href="#">Login now</a></p>
+        </div>
+    </form>
+    <!-- End Register Form -->
+    <app-banner></app-banner>
+    <app-whychoose></app-whychoose>
+    <app-funfactor></app-funfactor>
+    <app-testimonial></app-testimonial>
+    
